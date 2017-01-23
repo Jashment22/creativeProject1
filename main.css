@@ -1,0 +1,41 @@
+nav.navbar{
+	background: #000;
+	margin-bottom: 0px;
+	border:0;
+}
+#navbar li >a, .navbar-default a.navbar-brand{
+	color: #f5f5f5;
+}
+
+.main-background{
+	background: url('images/531000590.jpg') no-repeat;
+	background-size: cover;
+	background-position: 50% 70%; 
+}
+#about, #portfolio, #experience{
+	margin: 50px auto;
+	padding: 20px 40px 50px;
+	background: rgba(0,0,0, .75); 
+	color: white;
+}
+h2{
+	border-bottom: 1px solid #fff;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+}
+p, li a, li{
+	font-size: 20px;
+	color: #fff;
+}
+#footer{
+	background: #000;
+	text-align: center;
+	padding: 20px;
+}
+#footer a{
+	padding: 0 15px;
+}
+#footer button{
+	background: white;
+	margin-bottom: 20px;
+}
