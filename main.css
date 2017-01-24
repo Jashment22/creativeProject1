@@ -12,6 +12,7 @@ nav.navbar{
 	background-size: cover;
 	background-position: 50% 70%; 
 }
+
 #about, #portfolio, #experience{
 	margin: 50px auto;
 	padding: 20px 40px 50px;
@@ -25,12 +26,13 @@ h2{
 }
 p, li a, li{
 	font-size: 20px;
-	color: #fff;
+	color: #000;
 }
 #footer{
 	background: #000;
 	text-align: center;
 	padding: 20px;
+  color: #fff;
 }
 #footer a{
 	padding: 0 15px;
@@ -38,4 +40,15 @@ p, li a, li{
 #footer button{
 	background: white;
 	margin-bottom: 20px;
+}
+#welcome {
+  text-align: center;
+  font-weight: bold;
+}
+
+#face {
+  height: 500px;
+}
+#tail-pic {
+  position: absolute;
 }
