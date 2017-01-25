@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Creative 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .beard {
+        background: black;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-radius: 2px;
+        top: 80px;
+        left: 15px;
+      }
+      #tail-pic {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="welcome">Welcome to the Game Page!</h1>
+    <h2>Wooly Willy<h2>
+        <p>Use your mouse to put facial hair on Wooly Willy!</p> <br>
+          
+            
+              <img id="face" src="http://1.bp.blogspot.com/_oClSfHtjjAw/TDaU_gz-1DI/AAAAAAAABwA/Cxjn1YcXR-M/s1600/Willy.jpg">
+            
+         
+      <h2>Pin the Tail on the Donkey</h2>
+        <p style="text-align: center">Pin the tail on the donkey in one click!</p> <br>
+      <img id="donkey-pic" src="https://c3.q-assets.com/images/products/p/amn/amn-757_1z.jpg" width="300" alt="donkey photo" align="center">
+        
+        <img id="tail-pic" src="http://www.printablee.com/postpic/2010/09/pin-the-tail-on-donkey-coloring-page_298222.jpg" alt="tail" width="50" >
+      
+      <h2>Third Game?</h2>
+        <p style="text-align: center">Third description</p>
+      <footer id="footer">Made by Jordan Ashment and Zuleyka Guzman</footer>
+      
+      
+      
+      <script>
+    
+//For Wooly Willy      
+      
+
+    var face = document.getElementById("face");
+
+    var onMouseMove = function(event) {
+        
+        var beard = document.createElement("div");
+        beard.className = "beard";
+        document.body.appendChild(beard);
+        beard.style.top = event.clientY + "px";
+        beard.style.left = event.clientX + "px";
+        
+    };
+    
+    face.addEventListener("mousemove", onMouseMove);
+        
+//For Pin the Tail on the Donkey        
+            var donkeyPic = document.getElementById("donkey-pic");
+            var onDonkeyClick = function(e) {
+                var tailPic = document.getElementById("tail-pic");
+                tailPic.className = "tailPic";
+                tailPic.style.top = e.clientY + "px";
+                tailPic.style.left = e.clientX + "px";
+            };
+            donkeyPic.addEventListener("click", onDonkeyClick);
+      </script>
+     </body>
+</html>
