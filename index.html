@@ -20,7 +20,7 @@
         left: 15px;
       }
       #tail-pic {
-        position: fixed;
+        position: absolute;
       }
     </style>
   </head>
@@ -69,8 +69,8 @@
             var onDonkeyClick = function(e) {
                 var tailPic = document.getElementById("tail-pic");
                 tailPic.className = "tailPic";
-                tailPic.style.top = e.clientY + "px";
-                tailPic.style.left = e.clientX + "px";
+                tailPic.style.top = e.clientY + 570 + "px";
+                tailPic.style.left = e.clientX - 20 + "px";
             };
             donkeyPic.addEventListener("click", onDonkeyClick);
       </script>
