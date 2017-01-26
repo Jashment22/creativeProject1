@@ -38,9 +38,22 @@
       <img id="donkey-pic" src="https://c3.q-assets.com/images/products/p/amn/amn-757_1z.jpg" width="300" alt="donkey photo" align="center">
         
         <img id="tail-pic" src="http://www.printablee.com/postpic/2010/09/pin-the-tail-on-donkey-coloring-page_298222.jpg" alt="tail" width="50" >
-      
-      <h2>Third Game?</h2>
-        <p style="text-align: center">Third description</p>
+      <br><br><br><br>
+      <h2>The Magic 8 Ball!</h2>
+
+        <p style="text-align: center">Click the button to get an answer to a yes or no question!</p>
+        <p class="center"><button class="ball-button" onclick="getAnswer()">ASK</button></p>
+        <div id="magic-8-ball" class="before-ask" style="text-align: center;">
+          <div id="inner-ball">
+            <div id="ball-answer">
+                <p id="answer"></p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+
+
+
       <footer id="footer">Made by Jordan Ashment and Zuleyka Guzman</footer>
       
       
@@ -73,6 +86,23 @@
                 tailPic.style.left = e.clientX - 20 + "px";
             };
             donkeyPic.addEventListener("click", onDonkeyClick);
+
+//For Magic 8 Ball 
+
+
+      var answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely", "You may rely on it", "As I see it, yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"];
+
+      function getAnswer(){
+        document.getElementById("magic-8-ball").className="";
+        document.getElementById("answer").innerHTML = answers[randomWholeNum()];
+
+      }
+
+
+      function randomWholeNum() {
+       return Math.floor(Math.random() * 20);
+      }
+
       </script>
      </body>
 </html>
